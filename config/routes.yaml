@@ -1,0 +1,57 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+home:
+    path: /
+    controller: App\Controller\PublicController::showHome
+
+formations:
+    path: /formations
+    controller: App\Controller\PublicController::showFormations
+
+forum:
+    path: /forum
+    controller: App\Controller\PublicController::showForum
+
+store:
+    path: /store
+    controller: App\Controller\PublicController::showStore
+
+blog:
+    path: /blog
+    controller: App\Controller\PublicController::showBlog
+
+connexion:
+    path: /connexion
+    controller: App\Controller\PublicController::showConnexion
+
+mapsite:
+    path: /mapsite
+    controller: App\Controller\PublicController::showMapsite
+
+contact:
+    path: /contact
+    controller: App\Controller\PublicController::showContact
+
+valonauteinc:
+    path: /valonauteinc
+    controller: App\Controller\PublicController::showValonauteinc
+
+careers:
+    path: /careers
+    controller: App\Controller\PublicController::showCareers
+
+cgu:
+    path: /cgu
+    controller: App\Controller\PublicController::showCgu
+
+rgpd:
+    path: /rgpd
+    controller: App\Controller\PublicController::showRgpd
+
+userHome:
+    path: /user/home
+    controller: App\Controller\UserSecurityController::showHome

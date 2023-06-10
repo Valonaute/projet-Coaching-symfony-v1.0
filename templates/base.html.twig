@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Bienvenue !{% endblock %}</title>
+        <link rel="icon" href=" {{ asset ('assets/img/icon.png') }}">
+        
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset ('assets/css/style.css') }}">
+        {% endblock %}
+
+        {% block javascripts %}
+        <script src="{{ asset ('assets/js/script.js') }}"></script>
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <a href="{{ path ('home')}}"><img src="{{ asset ('assets/img/logo.png') }}" alt="logo" title="logo" height="80px"></a>
+            <a href="{{ path ('home')}}"> <h1>Valentin Gautier </h1></a>
+            <nav>
+                <a href="{{ path ('formations')}}">Formations</a>
+                <a href="{{ path ('forum')}}"> Forum </a>
+                <a href="{{ path ('store')}}"> Boutique </a>
+                <a href="{{ path ('blog')}}">Blog</a>
+                {% block login %}<a href="{{ path ('app_login')}}">Connexion</a>{% endblock login %}
+            </nav>
+        </header>
+
+        <main>
+
+        {% block body %}
+        
+        {% endblock body %}
+        
+        
+        {% block main %}
+        
+        {% endblock %}
+        </main>
+
+        <footer>
+            <section id="nav-column">
+                <section class="nav-column"> 
+                    <h2>Valentin </h2>
+                    <h2>Gautier </h2>
+                </section>
+                <section class="nav-column"> 
+                    <nav>
+                        <h3>Navigation</h3>
+                        <a href="{{ path ('home') }}">Accueil</a>
+                        <a href="{{ path ('mapsite') }}">Plan du site</a>
+                        <a href="{{ path ('contact') }}">Contact</a>
+                        <a href="{{ path ('valonauteinc') }}">Valonaute Inc.</a>
+                        <button><a href="{{ path ('careers') }}">On Recrute </a></button>
+                    </nav>
+                </section>
+                <section class="nav-column">
+                    <nav>
+                        <h3>Suivez-nous</h3>
+                        <a href="https://instagram.com/val0naute">Instagram</a>
+                        <a href="https://Facebook.com/valonaute">Facebook</a>
+                        <a href="https://www.youtube.com/channel/UC5KXcAr204aLa6F2-4hapGw">Youtube</a>
+                        <a href="https://github.com/valonaute"> Github </a>
+                        <a href="https://linkedin.com/in/valonaute"> Linkedin </a>
+                    </nav>
+                </section>
+            </section>
+            <section id="espace">
+            </section>
+            <section id="footer">
+                <h4> &copy; 2023 VALONAUTE INC. </h4>
+                <p> Made with 🤍</p>
+                <nav>
+                    <a href="{{ path ('cgu') }}">Légales</a>
+                    <p> | </p>
+                    <a href="{{ path ('rgpd') }}">Confidentialité</a>
+                </nav>
+            </section>
+        </footer>
+    </body>
+</html>
+
