@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+
+{% block content %}
+
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Description</th>
+        <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for category in categories %}
+    <tr>
+        <th scope="row">{{ category.id }}</th>
+        <td>{{ category.name }}</td>
+        <td>{{ category.description }}</td>
+        <td>
+            <a href="{{ path('update_category', {id: category.id})}}" class="btn btn-primary m-2">modifier</a>
+            <a href="{{ path('delete_category', {id: category.id})}}" class="btn btn-danger m-2">supprimer</a>
+        </td>
+    </tr>
+{% endfor %}
+
+    </tbody>
+</table>
+
+<a href="{{ path('create_category')}}" class="btn btn-success">créer une catégorie</a>
+
+{% endblock %}

@@ -88,7 +88,9 @@ class __TwigTemplate_dd9209c9d0abd435acebce24b4863587 extends Template
 
         // line 8
         echo "
-
+<h3> Nos conditions RGPD : 
+    
+</h3>
 
 
 ";
@@ -125,9 +127,11 @@ RGPD
 
 {% block main %}
 
+<h3> Nos conditions RGPD : 
+    
+</h3>
 
 
-
-{% endblock main %}", "public/rgpd.html.twig", "C:\\wamp\\www\\Projet coaching\\v1.0_coaching_symfony\\templates\\public\\rgpd.html.twig");
+{% endblock main %}", "public/rgpd.html.twig", "C:\\wamp\\www\\symfony\\v1.0_coaching_symfony\\templates\\public\\rgpd.html.twig");
     }
 }

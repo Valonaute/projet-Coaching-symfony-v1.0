@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '73e1009ad364d3e8ea56f759f48602180dcba8fb',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '73e1009ad364d3e8ea56f759f48602180dcba8fb',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -445,6 +445,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'symfony/mime' => array(
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '7b5d2121858cd6efbed778abce9cfdd7ab1f62ad',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/mime',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'symfony/options-resolver' => array(
             'pretty_version' => 'v6.3.0',
             'version' => '6.3.0.0',
@@ -490,6 +499,15 @@
             'reference' => 'a3d9148e2c363588e05abbdd4ee4f971f0a5330c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-intl-icu',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/polyfill-intl-idn' => array(
+            'pretty_version' => 'v1.27.0',
+            'version' => '1.27.0.0',
+            'reference' => '639084e360537a19f9ee352433b84ce831f3d2da',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-intl-idn',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

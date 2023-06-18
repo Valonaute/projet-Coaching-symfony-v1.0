@@ -20,7 +20,7 @@ class UserType extends AbstractType
             ->add('lastname', TextType::class, ['label' => 'Votre nom', 'attr' =>['placeholder' => 'Remplissez votre nom ici']])
             ->add('firstname', TextType::class, ['label' => 'Votre prénom', 'attr' =>['placeholder' => 'Remplissez votre prénom ici']])
             ->add('password', PasswordType::class)
-            ->add('submit', SubmitType::class)
+            ->add('Valider', SubmitType::class)
         ;
     }
 

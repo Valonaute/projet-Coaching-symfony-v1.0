@@ -88,7 +88,7 @@ class __TwigTemplate_c40454ea397c707178bdda014af43897 extends Template
 
         // line 8
         echo "
-
+<h3>Voici le plan du site : </h3>
 
 
 ";
@@ -125,9 +125,9 @@ Plan du site
 
 {% block main %}
 
+<h3>Voici le plan du site : </h3>
 
 
-
-{% endblock main %}", "public/mapsite.html.twig", "C:\\wamp\\www\\Projet coaching\\v1.0_coaching_symfony\\templates\\public\\mapsite.html.twig");
+{% endblock main %}", "public/mapsite.html.twig", "C:\\wamp\\www\\symfony\\v1.0_coaching_symfony\\templates\\public\\mapsite.html.twig");
     }
 }

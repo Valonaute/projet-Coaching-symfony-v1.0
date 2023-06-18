@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}page des catégories {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+    {% for product in products %}
+    <div class="card col-4" style="width: 18rem;">
+  <img src="{{ asset('uploads/')}}{{ product.picture }}" class="card-img-top" alt="{{ product.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name}}</h5>
+       <h5 class="card-title">{{ product.price}} €</h5>
+    <p class="card-text">{{ product.description}}</p>
+    <a href="{{ path('cart_add', {id: product.id })}}" class="btn btn-primary">Commander</a>
+      <a href="{{ path('productfront', {id: product.id})}}" class="btn btn-danger">Details</a>
+  </div>
+</div>
+    {% endfor %}
+
+
+    </div>
+</div>
+
+{% endblock %}

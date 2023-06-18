@@ -88,7 +88,7 @@ class __TwigTemplate_54b595555da532c7fb857a35727437a0 extends Template
 
         // line 8
         echo "
-
+<h3> Vous êtes sur la page contact </h3>
 
 
 ";
@@ -125,9 +125,9 @@ Contact
 
 {% block main %}
 
+<h3> Vous êtes sur la page contact </h3>
 
 
-
-{% endblock main %}", "public/contact.html.twig", "C:\\wamp\\www\\Projet coaching\\v1.0_coaching_symfony\\templates\\public\\contact.html.twig");
+{% endblock main %}", "public/contact.html.twig", "C:\\wamp\\www\\symfony\\v1.0_coaching_symfony\\templates\\public\\contact.html.twig");
     }
 }

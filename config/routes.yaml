@@ -8,6 +8,14 @@ home:
     path: /
     controller: App\Controller\PublicController::showHome
 
+app_login:
+    path: /login
+    controller: App\Controller\UserSecurityController::login
+
+app_logout:
+    path: /logout
+    controller: App\Controller\UserSecurityController::logout
+
 formations:
     path: /formations
     controller: App\Controller\PublicController::showFormations
@@ -52,6 +60,42 @@ rgpd:
     path: /rgpd
     controller: App\Controller\PublicController::showRgpd
 
-userHome:
+user_home:
     path: /user/home
     controller: App\Controller\UserSecurityController::showHome
+
+dashboard:
+    path: /admin/dashboard
+    controller: App\Controller\AdminSecurityController::showDashboard
+
+show_category:
+    path: /category/show
+    controller: App\Controller\CategoryController::showCategory
+
+create_category:
+    path: /admin/category/create
+    controller: App\Controller\CategoryController::createCategory
+
+update_category:
+    path: /admin/category/update/{id}
+    controller: App\Controller\CategoryController::updateCategory
+
+delete_category:
+    path: /admin/category/delete/{id}
+    controller: App\Controller\CategoryController::deleteCategory
+
+show_product:
+    path: /product/show
+    controller: App\Controller\ProductController::showProducts
+
+create_product:
+    path: /admin/product/create
+    controller: App\Controller\ProductController::createproduct
+
+update_product:
+    path: /admin/product/update/{id}
+    controller: App\Controller\ProductController::updateProduct
+
+delete_product:
+    path: /admin/product/delete/{id}
+    controller: App\Controller\ProductController::deleteProduct

@@ -88,7 +88,7 @@ class __TwigTemplate_5d8c315ea4220e1f83951d653e58939b extends Template
 
         // line 8
         echo "
-
+<h3> PLus d'infos sur la société Valonaute INC. :</h3>
 
 
 ";
@@ -125,9 +125,9 @@ Valonaute Inc.
 
 {% block main %}
 
+<h3> PLus d'infos sur la société Valonaute INC. :</h3>
 
 
-
-{% endblock main %}", "public/valonauteinc.html.twig", "C:\\wamp\\www\\Projet coaching\\v1.0_coaching_symfony\\templates\\public\\valonauteinc.html.twig");
+{% endblock main %}", "public/valonauteinc.html.twig", "C:\\wamp\\www\\symfony\\v1.0_coaching_symfony\\templates\\public\\valonauteinc.html.twig");
     }
 }

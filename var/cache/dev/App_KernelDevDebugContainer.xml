@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.project_dir">C:\wamp\www\Projet coaching\v1.0_coaching_symfony</parameter>
+    <parameter key="kernel.project_dir">C:\wamp\www\symfony\v1.0_coaching_symfony</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev</parameter>
-    <parameter key="kernel.cache_dir">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\log</parameter>
+    <parameter key="kernel.build_dir">C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev</parameter>
+    <parameter key="kernel.cache_dir">C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">C:\wamp\www\symfony\v1.0_coaching_symfony\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="TwigBundle">Symfony\Bundle\TwigBundle\TwigBundle</parameter>
@@ -20,40 +20,41 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\framework-bundle</parameter>
+        <parameter key="path">C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\twig-bundle</parameter>
+        <parameter key="path">C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="TwigExtraBundle" type="collection">
-        <parameter key="path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\twig\extra-bundle</parameter>
+        <parameter key="path">C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\twig\extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\doctrine\doctrine-bundle</parameter>
+        <parameter key="path">C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\doctrine\doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\doctrine\doctrine-migrations-bundle</parameter>
+        <parameter key="path">C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\doctrine\doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\web-profiler-bundle</parameter>
+        <parameter key="path">C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\maker-bundle\src</parameter>
+        <parameter key="path">C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\maker-bundle\src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
-        <parameter key="path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\security-bundle</parameter>
+        <parameter key="path">C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\security-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">App_KernelDevDebugContainer</parameter>
+    <parameter key="image_directory">C:\wamp\www\symfony\v1.0_coaching_symfony/public/uploads</parameter>
     <parameter key="event_dispatcher.event_aliases" type="collection">
       <parameter key="Symfony\Component\Console\Event\ConsoleCommandEvent">console.command</parameter>
       <parameter key="Symfony\Component\Console\Event\ConsoleErrorEvent">console.error</parameter>
@@ -89,15 +90,15 @@
     <parameter key="asset.request_context.base_path">null</parameter>
     <parameter key="asset.request_context.secure">null</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
-    <parameter key="router.cache_dir">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev</parameter>
+    <parameter key="router.cache_dir">C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="cache.prefix.seed">_C:\wamp\www\Projet coaching\v1.0_coaching_symfony.App_KernelDevDebugContainer</parameter>
+    <parameter key="cache.prefix.seed">_C:\wamp\www\symfony\v1.0_coaching_symfony.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
       <parameter key="cache_limiter" type="string">0</parameter>
@@ -110,15 +111,16 @@
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/profiler</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
+      <parameter>bootstrap_4_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">C:\wamp\www\Projet coaching\v1.0_coaching_symfony/templates</parameter>
+    <parameter key="twig.default_path">C:\wamp\www\symfony\v1.0_coaching_symfony/templates</parameter>
     <parameter key="doctrine.dbal.configuration.class">Doctrine\DBAL\Configuration</parameter>
     <parameter key="doctrine.data_collector.class">Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector</parameter>
     <parameter key="doctrine.dbal.connection.event_manager.class">Symfony\Bridge\Doctrine\ContainerAwareEventManager</parameter>
@@ -183,7 +185,7 @@
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
     <parameter key="doctrine.orm.enable_lazy_ghost_objects">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -271,6 +273,37 @@
     <service id="App\Entity" class="App\Entity" abstract="true">
       <tag name="container.excluded" source="in &quot;config/services.yaml&quot;"/>
     </service>
+    <service id="App\Controller\AdminSecurityController" class="App\Controller\AdminSecurityController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\AdminSecurityController"/>
+      </call>
+    </service>
+    <service id="App\Controller\CategoryController" class="App\Controller\CategoryController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <argument type="service" id="App\Repository\CategoryRepository"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\CategoryController"/>
+      </call>
+    </service>
+    <service id="App\Controller\OrderController" class="App\Controller\OrderController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\OrderController"/>
+      </call>
+    </service>
+    <service id="App\Controller\ProductController" class="App\Controller\ProductController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
+      <argument type="service" id="App\Repository\ProductRepository"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\ProductController"/>
+      </call>
+    </service>
     <service id="App\Controller\PublicController" class="App\Controller\PublicController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -285,6 +318,13 @@
         <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\RegisterController"/>
       </call>
     </service>
+    <service id="App\Controller\ReviewController" class="App\Controller\ReviewController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\ReviewController"/>
+      </call>
+    </service>
     <service id="App\Controller\UserSecurityController" class="App\Controller\UserSecurityController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -292,10 +332,34 @@
         <argument type="service" id=".service_locator.O2p6Lk7.App\Controller\UserSecurityController"/>
       </call>
     </service>
+    <service id="App\Form\CategoryType" class="App\Form\CategoryType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\OrderType" class="App\Form\OrderType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\ProductType" class="App\Form\ProductType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\ReviewType" class="App\Form\ReviewType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
     <service id="App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
-    <service id="App\Repository\AdminRepository" class="App\Repository\AdminRepository" autowire="true" autoconfigure="true">
+    <service id="App\Repository\CategoryRepository" class="App\Repository\CategoryRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\OrderRepository" class="App\Repository\OrderRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\ProductRepository" class="App\Repository\ProductRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\ReviewRepository" class="App\Repository\ReviewRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
@@ -329,7 +393,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
       <tag priority="-50" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">controller.argument_value_resolver</tag>
-      <argument type="service" id=".service_locator.O8ItdXX"/>
+      <argument type="service" id=".service_locator.R1jgn5V"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">
       <tag priority="-100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">controller.argument_value_resolver</tag>
@@ -410,7 +474,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/http_cache</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -420,7 +484,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer">
       <argument type="tagged_iterator" tag="kernel.cache_clearer"/>
@@ -620,7 +684,7 @@
       </argument>
       <argument>UTF-8</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <argument type="service">
         <service>
           <argument type="service" id="request_stack"/>
@@ -653,7 +717,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="filesystem"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -839,7 +903,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument>dev</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <call method="setName">
         <argument>debug:dotenv</argument>
       </call>
@@ -913,6 +977,10 @@
         <argument>Symfony\Bridge\Doctrine\Form\Type</argument>
       </argument>
       <argument type="collection">
+        <argument>App\Form\CategoryType</argument>
+        <argument>App\Form\OrderType</argument>
+        <argument>App\Form\ProductType</argument>
+        <argument>App\Form\ReviewType</argument>
         <argument>App\Form\UserType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
@@ -1065,7 +1133,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1084,7 +1152,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/app</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -1266,7 +1334,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter">
       <argument>%env(default::SYMFONY_IDE)%</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <argument type="service_closure" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -1657,7 +1725,7 @@
     </service>
     <service id="argument_resolver.not_tagged_controller" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
       <tag name="controller.argument_value_resolver" priority="-200"/>
-      <argument type="service" id=".service_locator.O8ItdXX"/>
+      <argument type="service" id=".service_locator.R1jgn5V"/>
     </service>
     <service id="routing.resolver" class="Symfony\Component\Config\Loader\LoaderResolver">
       <call method="addLoader">
@@ -1753,7 +1821,7 @@
       <argument type="service" id=".service_locator.PvoQzFT.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev</argument>
+        <argument key="cache_dir">C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -1791,7 +1859,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -1819,7 +1887,7 @@
     </service>
     <service id="secrets.vault" class="Symfony\Bundle\FrameworkBundle\Secrets\SodiumVault">
       <tag name="container.env_var_loader"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
       <argument type="service" id="secrets.decryption_key" on-invalid="ignore"/>
     </service>
     <service id="secrets.decryption_key" class="Symfony\Component\String\LazyString" constructor="fromCallable">
@@ -1827,7 +1895,7 @@
       <argument>base64:default::SYMFONY_DECRYPTION_SECRET</argument>
     </service>
     <service id="secrets.local_vault" class="Symfony\Bundle\FrameworkBundle\Secrets\DotenvVault">
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony/.env.dev.local</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony/.env.dev.local</argument>
     </service>
     <service id="property_info" class="Symfony\Component\PropertyInfo\PropertyInfoExtractor">
       <argument type="iterator">
@@ -1899,7 +1967,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/sessions</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -1967,7 +2035,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.CfnR51D"/>
+      <argument type="service" id=".service_locator.v56xsYI"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -2067,7 +2135,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\form/Resources/config/validation.xml</argument>
+          <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -2092,10 +2160,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/validation.php</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" constructor="create">
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/validation.php</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory">
@@ -2437,7 +2505,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/profiler</argument>
+      <argument>file:C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -2484,7 +2552,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/App_KernelDevDebugContainer</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -2581,6 +2649,11 @@
       <tag name="data_collector" template="@WebProfiler/Collector/validator.html.twig" id="validator" priority="320"/>
       <argument type="service" id="debug.validator"/>
     </service>
+    <service id="mime_types" class="Symfony\Component\Mime\MimeTypes">
+      <call method="setDefault">
+        <argument type="service" id="mime_types"/>
+      </call>
+    </service>
     <service id="twig" class="Twig\Environment">
       <tag name="container.preload" class="Twig\Cache\FilesystemCache"/>
       <tag name="container.preload" class="Twig\Extension\CoreExtension"/>
@@ -2593,7 +2666,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/twig</argument>
+        <argument key="cache">C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -2690,9 +2763,9 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection">
-        <argument key="C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
+        <argument key="C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
       </argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony/templates</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony/templates</argument>
       <argument type="collection"/>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer">
@@ -2704,44 +2777,44 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>!DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony/templates</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony/templates</argument>
       </call>
       <call method="addPath">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader"/>
@@ -2767,7 +2840,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension">
@@ -2851,9 +2924,9 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="twig"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony/templates</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony/templates</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -3051,7 +3124,7 @@
       <argument type="service" id="doctrine.debug_data_holder"/>
       <argument type="service" id="debug.stopwatch" on-invalid="null"/>
     </service>
-    <service id=".1_ServiceLocator~h1gfdv3" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".1_ServiceLocator~fRDaetl" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer">
@@ -3070,7 +3143,7 @@
     <service id="doctrine.orm.configuration" class="Doctrine\ORM\Configuration" abstract="true"/>
     <service id="doctrine.orm.entity_manager.abstract" class="Doctrine\ORM\EntityManager" lazy="true" abstract="true"/>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.PT593ul"/>
+      <argument type="service" id=".service_locator.B.f_RdW"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -3269,7 +3342,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -3304,7 +3377,7 @@
     </service>
     <service id="doctrine.orm.default_attribute_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AttributeDriver">
       <argument type="collection">
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\src\Entity</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\src\Entity</argument>
       </argument>
       <argument>true</argument>
     </service>
@@ -3368,7 +3441,7 @@
     <service id="doctrine.migrations.configuration" class="Doctrine\Migrations\Configuration\Configuration">
       <call method="addMigrationsDirectory">
         <argument>DoctrineMigrations</argument>
-        <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony/migrations</argument>
+        <argument>C:\wamp\www\symfony\v1.0_coaching_symfony/migrations</argument>
       </call>
       <call method="setAllOrNothing">
         <argument>false</argument>
@@ -3512,7 +3585,7 @@
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -3567,8 +3640,8 @@
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
       <argument type="service" id="maker.file_link_formatter"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony/templates</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder">
       <argument>App</argument>
@@ -3733,7 +3806,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration">
       <tag name="maker.command"/>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony</argument>
       <argument type="service" id="maker.file_link_formatter"/>
     </service>
     <service id="maker.maker.make_stimulus_controller" class="Symfony\Bundle\MakerBundle\Maker\MakeStimulusController">
@@ -4446,19 +4519,48 @@
         <argument>Hash a user password</argument>
       </call>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\AdminSecurityController" class="App\Controller\AdminSecurityController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\AdminSecurityController" class="App\Controller\AdminSecurityController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\AdminSecurityController" class="App\Controller\AdminSecurityController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\CategoryController" class="App\Controller\CategoryController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\CategoryController" class="App\Controller\CategoryController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\CategoryController" class="App\Controller\CategoryController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\OrderController" class="App\Controller\OrderController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\OrderController" class="App\Controller\OrderController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\OrderController" class="App\Controller\OrderController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ProductController" class="App\Controller\ProductController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ProductController" class="App\Controller\ProductController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\ProductController" class="App\Controller\ProductController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PublicController" class="App\Controller\PublicController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PublicController" class="App\Controller\PublicController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\PublicController" class="App\Controller\PublicController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\RegisterController" class="App\Controller\RegisterController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\RegisterController" class="App\Controller\RegisterController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\RegisterController" class="App\Controller\RegisterController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ReviewController" class="App\Controller\ReviewController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ReviewController" class="App\Controller\ReviewController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\ReviewController" class="App\Controller\ReviewController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\UserSecurityController" class="App\Controller\UserSecurityController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\UserSecurityController" class="App\Controller\UserSecurityController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\UserSecurityController" class="App\Controller\UserSecurityController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\CategoryType" class="App\Form\CategoryType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\CategoryType" class="App\Form\CategoryType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\OrderType" class="App\Form\OrderType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\OrderType" class="App\Form\OrderType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\ProductType" class="App\Form\ProductType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\ProductType" class="App\Form\ProductType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\ReviewType" class="App\Form\ReviewType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\ReviewType" class="App\Form\ReviewType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UserType" class="App\Form\UserType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AdminRepository" class="App\Repository\AdminRepository" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Repository\AdminRepository" class="App\Repository\AdminRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CategoryRepository" class="App\Repository\CategoryRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\CategoryRepository" class="App\Repository\CategoryRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\OrderRepository" class="App\Repository\OrderRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\OrderRepository" class="App\Repository\OrderRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ProductRepository" class="App\Repository\ProductRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\ProductRepository" class="App\Repository\ProductRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ReviewRepository" class="App\Repository\ReviewRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\ReviewRepository" class="App\Repository\ReviewRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".service_locator.7nzbL4K" class="Symfony\Component\DependencyInjection\ServiceLocator">
@@ -4835,6 +4937,12 @@
         <argument key="loader" type="service_closure" id=".errored..service_locator.y4_Zrx..Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
+    <service id=".service_locator.DZowHzb" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="productRepository" type="service_closure" id="App\Repository\ProductRepository"/>
+      </argument>
+    </service>
     <service id=".service_locator.nKyAywb" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -4848,15 +4956,19 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.O8ItdXX" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.R1jgn5V" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Controller\CategoryController::showcategoryfront" type="service_closure" id=".service_locator.DZowHzb"/>
+        <argument key="App\Controller\ProductController::showProducts" type="service_closure" id=".service_locator.DZowHzb"/>
         <argument key="App\Controller\RegisterController::index" type="service_closure" id=".service_locator.nKyAywb"/>
         <argument key="App\Controller\UserSecurityController::login" type="service_closure" id=".service_locator.rSTd.nA"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.y4_Zrx."/>
+        <argument key="App\Controller\CategoryController:showcategoryfront" type="service_closure" id=".service_locator.DZowHzb"/>
+        <argument key="App\Controller\ProductController:showProducts" type="service_closure" id=".service_locator.DZowHzb"/>
         <argument key="App\Controller\RegisterController:index" type="service_closure" id=".service_locator.nKyAywb"/>
         <argument key="App\Controller\UserSecurityController:login" type="service_closure" id=".service_locator.rSTd.nA"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.y4_Zrx."/>
@@ -4940,9 +5052,13 @@
       <argument type="service" id="argument_resolver.query_parameter_value_resolver"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.CfnR51D" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.v56xsYI" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Form\CategoryType" type="service_closure" id="App\Form\CategoryType"/>
+        <argument key="App\Form\OrderType" type="service_closure" id="App\Form\OrderType"/>
+        <argument key="App\Form\ProductType" type="service_closure" id="App\Form\ProductType"/>
+        <argument key="App\Form\ReviewType" type="service_closure" id="App\Form\ReviewType"/>
         <argument key="App\Form\UserType" type="service_closure" id="App\Form\UserType"/>
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service_closure" id="form.type.entity"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType" type="service_closure" id="form.type.choice"/>
@@ -4961,10 +5077,13 @@
         <argument key="doctrine.orm.listeners.pdo_session_handler_schema_listener" type="service_closure" id="doctrine.orm.listeners.pdo_session_handler_schema_listener"/>
       </argument>
     </service>
-    <service id=".service_locator.PT593ul" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.B.f_RdW" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Repository\AdminRepository" type="service_closure" id="App\Repository\AdminRepository"/>
+        <argument key="App\Repository\CategoryRepository" type="service_closure" id="App\Repository\CategoryRepository"/>
+        <argument key="App\Repository\OrderRepository" type="service_closure" id="App\Repository\OrderRepository"/>
+        <argument key="App\Repository\ProductRepository" type="service_closure" id="App\Repository\ProductRepository"/>
+        <argument key="App\Repository\ReviewRepository" type="service_closure" id="App\Repository\ReviewRepository"/>
         <argument key="App\Repository\UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
     </service>
@@ -5123,6 +5242,30 @@
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\AdminSecurityController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\AdminSecurityController"/>
+      <argument>App\Controller\AdminSecurityController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\CategoryController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\CategoryController"/>
+      <argument>App\Controller\CategoryController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\OrderController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\OrderController"/>
+      <argument>App\Controller\OrderController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\ProductController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\ProductController"/>
+      <argument>App\Controller\ProductController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
     <service id=".service_locator.O2p6Lk7.App\Controller\PublicController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\PublicController"/>
       <argument>App\Controller\PublicController</argument>
@@ -5132,6 +5275,12 @@
     <service id=".service_locator.O2p6Lk7.App\Controller\RegisterController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\RegisterController"/>
       <argument>App\Controller\RegisterController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.O2p6Lk7" method="withContext"/>
+    </service>
+    <service id=".service_locator.O2p6Lk7.App\Controller\ReviewController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\ReviewController"/>
+      <argument>App\Controller\ReviewController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.O2p6Lk7" method="withContext"/>
     </service>
@@ -5881,94 +6030,94 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>ICMH7YrCXd</argument>
+      <argument>ewo8v2pGtp</argument>
       <argument>0</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/app</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>dtL-zcYd2A</argument>
+      <argument>+qhtQBjwzK</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>yg-i1sRDb0</argument>
+      <argument>GNBF6tgPtc</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>Nf6nMVqTbW</argument>
+      <argument>mzqfsoqMQg</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>rWtDPhuOlS</argument>
+      <argument>V41ph+Ctxk</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>K7-yzs1w12</argument>
+      <argument>Xu5oAk201x</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.asset_mapper.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>TiBTylobZY</argument>
+      <argument>XGAS7qDx+a</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.scheduler.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>wRjsM8nYQS</argument>
+      <argument>qFydT913YM</argument>
       <argument>0</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/app</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.validator_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>eiWEHJnsB9</argument>
+      <argument>7cwyctiEk2</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.doctrine.orm.default.result.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.doctrine.orm.default.query.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>DWsLjoX8qK</argument>
+      <argument>t7Zh9xSahh</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.security_is_granted_attribute_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>AKBubNpbHz</argument>
+      <argument>aT0sFHpWqT</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\wamp\www\Projet coaching\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp\www\symfony\v1.0_coaching_symfony\var\cache\dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6040,6 +6189,8 @@
     <service id="form.choice_list_factory" alias="form.choice_list_factory.cached"/>
     <service id="Symfony\Component\Validator\Validator\ValidatorInterface" alias="debug.validator"/>
     <service id="validator.mapping.class_metadata_factory" alias="debug.validator"/>
+    <service id="Symfony\Component\Mime\MimeTypesInterface" alias="mime_types"/>
+    <service id="Symfony\Component\Mime\MimeTypeGuesserInterface" alias="mime_types"/>
     <service id="Twig_Environment" alias="twig">
       <deprecated package="symfony/twig-bundle" version="6.3">The "%alias_id%" service alias is deprecated, use "Twig\Environment" or "twig" instead.</deprecated>
     </service>
@@ -6084,14 +6235,14 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.7nzbL4K" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.O8ItdXX"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.R1jgn5V"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="Psr\Log\LoggerInterface" alias="logger"/>
     <service id=".service_locator.o.uf2zi" alias=".service_locator.7nzbL4K"/>
-    <service id=".service_locator.tAldlqV" alias=".service_locator.O8ItdXX"/>
+    <service id=".service_locator.tSaz6NC" alias=".service_locator.R1jgn5V"/>
     <service id=".service_locator.BFrsqsn" alias=".service_locator.F9PKc.7"/>
-    <service id=".service_locator.GRReuIi" alias=".service_locator.CfnR51D"/>
+    <service id=".service_locator.NGyDuN." alias=".service_locator.v56xsYI"/>
     <service id=".service_locator.LMuqDDe" alias=".service_locator.VHsrTPK"/>
     <service id=".service_locator.jUv.zyj" alias=".service_locator.O2p6Lk7"/>
     <service id="validator" alias="debug.validator"/>
@@ -6105,6 +6256,7 @@
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
     <service id="security.event_dispatcher.main" alias="debug.security.event_dispatcher.main"/>
     <service id=".service_locator.gFlme_s" alias=".service_locator.y4_Zrx."/>
+    <service id=".service_locator.YAVoKZL" alias=".service_locator.DZowHzb"/>
     <service id=".service_locator.mZiYHc2" alias=".service_locator.nKyAywb"/>
     <service id=".service_locator.7NIAq8D" alias=".service_locator.rSTd.nA"/>
     <service id=".service_locator.GDg2hr7" alias=".service_locator.O2p6Lk7"/>

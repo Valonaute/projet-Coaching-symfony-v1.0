@@ -88,7 +88,9 @@ class __TwigTemplate_2c563693b18239051293879263b8e051 extends Template
 
         // line 8
         echo "
-
+<h3> Nos conditions générales d'utilisation : 
+    
+</h3>
 
 
 ";
@@ -125,9 +127,11 @@ CGU
 
 {% block main %}
 
+<h3> Nos conditions générales d'utilisation : 
+    
+</h3>
 
 
-
-{% endblock main %}", "public/cgu.html.twig", "C:\\wamp\\www\\Projet coaching\\v1.0_coaching_symfony\\templates\\public\\cgu.html.twig");
+{% endblock main %}", "public/cgu.html.twig", "C:\\wamp\\www\\symfony\\v1.0_coaching_symfony\\templates\\public\\cgu.html.twig");
     }
 }
