@@ -99,3 +99,28 @@ update_product:
 delete_product:
     path: /admin/product/delete/{id}
     controller: App\Controller\ProductController::deleteProduct
+
+product_front:
+    path: /product/{id}
+    controller: App\Controller\ProductController::showProductFront
+
+create_article:
+    path: /admin/article/create
+    controller: App\Controller\ArticleController::createArticle
+
+show_article:
+    path: /articles/show
+    controller: App\Controller\ArticleController::showArticles
+
+update_article:
+    path: /admin/article/update/{id}
+    controller: App\Controller\ArticleController::updateArticle
+
+delete_article:
+    path: /admin/article/delete/{id}
+    controller: App\Controller\ArticleController::deleteArticle
+
+cart_add:
+    path: /cart/add/{id}
+    controller: App\Controller\CartController::add
+

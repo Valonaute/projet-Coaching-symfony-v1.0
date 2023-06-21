@@ -25,8 +25,6 @@ class ProductController extends AbstractController
         $this->productRepository = $productRepository;
     }
 
-    /* #[Route('/admin/createproduct', name: 'createproduct')] */
-
     public function createProduct(Request $request)
     {
         $product = new Product();
@@ -153,6 +151,15 @@ class ProductController extends AbstractController
         }
     }
     
+    public function showProductFront($id, ProductRepository $productRepository)
+    {
+        $product = $productRepository->findBy(['id' => $id]);
+
+        
+       return  $this->render('product/showfront.html.twig', [
+            'product' => $product
+        ]);
+    }
 
 
 }

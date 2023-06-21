@@ -97,23 +97,39 @@ class __TwigTemplate_576e8a9e7a8894280b130dbf2bcf9bb6 extends Template
 
 <section>
     <p> Modifier le contenu du site </p>
-    <a class='btn btn-warning' href=\"";
-        // line 15
+
+    <div><a class='btn btn-success' href=\"";
+        // line 16
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("create_category");
         echo "\"> Ajouter une catégorie</a>
-    <a class='btn btn-warning' href=\"";
-        // line 16
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_category");
-        echo "\"> Voir les catégories</a>
-    <a class='btn btn-warning' href=\"";
+    <a class='btn btn-success' href=\"";
         // line 17
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_category");
+        echo "\"> Voir les catégories</a></div>
+</br>
+    <div>
+    <a class='btn btn-primary' href=\"";
+        // line 20
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("create_product");
         echo "\"> Ajouter un produit</a>
-    <a class='btn btn-warning' href=\"";
-        // line 18
+    <a class='btn btn-primary' href=\"";
+        // line 21
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_product");
         echo "\"> Voir tous les produits</a>
+    </div>
+</br>
+    <div>
+    <a class='btn btn-secondary' href=\"";
+        // line 25
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("create_article");
+        echo "\"> Ajouter un article du Blog</a>
+    <a class='btn btn-secondary' href=\"";
+        // line 26
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_article");
+        echo "\"> Voir les articles du blog</a>
+    </div>
 </section>
+</br>
 <section>
     <p> Accéder aux statistiques et commentaires  </p>
     <a href=\"\"> Voir les dernières commandes </a>
@@ -142,7 +158,7 @@ class __TwigTemplate_576e8a9e7a8894280b130dbf2bcf9bb6 extends Template
 
     public function getDebugInfo()
     {
-        return array (  114 => 18,  110 => 17,  106 => 16,  102 => 15,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  128 => 26,  124 => 25,  117 => 21,  113 => 20,  107 => 17,  103 => 16,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -161,11 +177,21 @@ Tableau de bord
 
 <section>
     <p> Modifier le contenu du site </p>
-    <a class='btn btn-warning' href=\"{{ path ('create_category')}}\"> Ajouter une catégorie</a>
-    <a class='btn btn-warning' href=\"{{ path ('show_category')}}\"> Voir les catégories</a>
-    <a class='btn btn-warning' href=\"{{ path ('create_product')}}\"> Ajouter un produit</a>
-    <a class='btn btn-warning' href=\"{{ path ('show_product')}}\"> Voir tous les produits</a>
+
+    <div><a class='btn btn-success' href=\"{{ path ('create_category')}}\"> Ajouter une catégorie</a>
+    <a class='btn btn-success' href=\"{{ path ('show_category')}}\"> Voir les catégories</a></div>
+</br>
+    <div>
+    <a class='btn btn-primary' href=\"{{ path ('create_product')}}\"> Ajouter un produit</a>
+    <a class='btn btn-primary' href=\"{{ path ('show_product')}}\"> Voir tous les produits</a>
+    </div>
+</br>
+    <div>
+    <a class='btn btn-secondary' href=\"{{ path ('create_article')}}\"> Ajouter un article du Blog</a>
+    <a class='btn btn-secondary' href=\"{{ path ('show_article')}}\"> Voir les articles du blog</a>
+    </div>
 </section>
+</br>
 <section>
     <p> Accéder aux statistiques et commentaires  </p>
     <a href=\"\"> Voir les dernières commandes </a>
@@ -173,6 +199,6 @@ Tableau de bord
     <a href=\"\"> Statistiques </a>
 </section>
 
-{% endblock main %}", "admin/dashboard.html.twig", "C:\\wamp\\www\\symfony\\v1.0_coaching_symfony\\templates\\admin\\dashboard.html.twig");
+{% endblock main %}", "admin/dashboard.html.twig", "C:\\wamp\\www\\symfony\\v1.1_coaching_symfony\\templates\\admin\\dashboard.html.twig");
     }
 }

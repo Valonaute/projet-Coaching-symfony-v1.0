@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Panier{% endblock %}
+
+{% block content %}
+<h1>votre panier </h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Produit</th>
+            <th>Prix</th>
+            <th>Quantite</th>
+            <th>Total</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+            <tr>
+                <td>{{ item.product.name }}</td>
+                <td>{{ item.product.price }} €</td>
+                <td>{{ item.qty }}</td>
+                <td>
+                    <a href="{{ path('cart_delete', {id: item.product.id })}}"><i class="fas fa-trash"></i></a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total: </td>
+            <td colspan="2">{{ total }} € </td>
+        </tr>
+    </tfoot>
+</table>  
+
+<hr>
+
+<h2> Confirmez votre commande en remplissant ce formulaire</h2>
+{{ form_start(confirmationform, {'action': path('order_validation')}) }}
+
+{{ form_widget(confirmationform) }}
+ 
+{{ form_end(confirmationform) }}
+
+
+{% endblock %}
+
+

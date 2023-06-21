@@ -43,4 +43,10 @@ return [
     'create_product' => [[], ['_controller' => 'App\\Controller\\ProductController::createproduct'], [], [['text', '/admin/product/create']], [], [], []],
     'update_product' => [['id'], ['_controller' => 'App\\Controller\\ProductController::updateProduct'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/product/update']], [], [], []],
     'delete_product' => [['id'], ['_controller' => 'App\\Controller\\ProductController::deleteProduct'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/product/delete']], [], [], []],
+    'product_front' => [['id'], ['_controller' => 'App\\Controller\\ProductController::showProductFront'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/product']], [], [], []],
+    'create_article' => [[], ['_controller' => 'App\\Controller\\ArticleController::createArticle'], [], [['text', '/admin/article/create']], [], [], []],
+    'show_article' => [[], ['_controller' => 'App\\Controller\\ArticleController::showArticles'], [], [['text', '/articles/show']], [], [], []],
+    'update_article' => [['id'], ['_controller' => 'App\\Controller\\ArticleController::updateArticle'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/article/update']], [], [], []],
+    'delete_article' => [['id'], ['_controller' => 'App\\Controller\\ArticleController::deleteArticle'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/article/delete']], [], [], []],
+    'cart_add' => [['id'], ['_controller' => 'App\\Controller\\CartController::add'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/cart/add']], [], [], []],
 ];

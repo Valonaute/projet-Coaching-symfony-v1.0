@@ -122,11 +122,15 @@ class __TwigTemplate_ffc0d6a079c3e91fd9e5af5862d294a9 extends Template
        <td>
         <a href=\"";
             // line 33
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("update_product", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 33)]), "html", null, true);
-            echo "\" class=\"btn btn-warning m-2\">modifier</a>
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product_front", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 33)]), "html", null, true);
+            echo "\" class=\"btn btn-primary m-2\">Voir</a>
         <a href=\"";
             // line 34
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete_product", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 34)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("update_product", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 34)]), "html", null, true);
+            echo "\" class=\"btn btn-warning m-2\">modifier</a>
+        <a href=\"";
+            // line 35
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("delete_product", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 35)]), "html", null, true);
             echo "\" class=\"btn btn-danger m-2\">supprimer</a>
       </td>
     </tr>
@@ -135,13 +139,17 @@ class __TwigTemplate_ffc0d6a079c3e91fd9e5af5862d294a9 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 38
+        // line 39
         echo "  </tbody>
 </table>
 <a href=\"";
-        // line 40
+        // line 41
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("create_product");
         echo "\" class=\"btn btn-success\">créer votre produit</a>
+<a href=\"";
+        // line 42
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_product");
+        echo "\" class=\"btn btn-primary\">Voir Tous les produit</a>
 
 ";
         
@@ -164,7 +172,7 @@ class __TwigTemplate_ffc0d6a079c3e91fd9e5af5862d294a9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  143 => 40,  139 => 38,  129 => 34,  125 => 33,  119 => 30,  113 => 28,  109 => 27,  105 => 26,  101 => 25,  97 => 24,  93 => 23,  90 => 22,  86 => 21,  68 => 5,  58 => 4,  35 => 1,);
+        return array (  151 => 42,  147 => 41,  143 => 39,  133 => 35,  129 => 34,  125 => 33,  119 => 30,  113 => 28,  109 => 27,  105 => 26,  101 => 25,  97 => 24,  93 => 23,  90 => 22,  86 => 21,  68 => 5,  58 => 4,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -201,6 +209,7 @@ class __TwigTemplate_ffc0d6a079c3e91fd9e5af5862d294a9 extends Template
        <td>{{ product.idcategory.name }}</td> 
        
        <td>
+        <a href=\"{{ path('product_front', {id: product.id})}}\" class=\"btn btn-primary m-2\">Voir</a>
         <a href=\"{{ path('update_product', {id: product.id})}}\" class=\"btn btn-warning m-2\">modifier</a>
         <a href=\"{{ path('delete_product', {id: product.id})}}\" class=\"btn btn-danger m-2\">supprimer</a>
       </td>
@@ -209,7 +218,8 @@ class __TwigTemplate_ffc0d6a079c3e91fd9e5af5862d294a9 extends Template
   </tbody>
 </table>
 <a href=\"{{ path('create_product')}}\" class=\"btn btn-success\">créer votre produit</a>
+<a href=\"{{ path('show_product')}}\" class=\"btn btn-primary\">Voir Tous les produit</a>
 
-{%  endblock %}", "product/show.html.twig", "C:\\wamp\\www\\symfony\\v1.0_coaching_symfony\\templates\\product\\show.html.twig");
+{%  endblock %}", "product/show.html.twig", "C:\\wamp\\www\\symfony\\v1.1_coaching_symfony\\templates\\product\\show.html.twig");
     }
 }

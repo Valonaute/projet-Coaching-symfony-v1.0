@@ -12,11 +12,21 @@ Tableau de bord
 
 <section>
     <p> Modifier le contenu du site </p>
-    <a class='btn btn-warning' href="{{ path ('create_category')}}"> Ajouter une catégorie</a>
-    <a class='btn btn-warning' href="{{ path ('show_category')}}"> Voir les catégories</a>
-    <a class='btn btn-warning' href="{{ path ('create_product')}}"> Ajouter un produit</a>
-    <a class='btn btn-warning' href="{{ path ('show_product')}}"> Voir tous les produits</a>
+
+    <div><a class='btn btn-success' href="{{ path ('create_category')}}"> Ajouter une catégorie</a>
+    <a class='btn btn-success' href="{{ path ('show_category')}}"> Voir les catégories</a></div>
+</br>
+    <div>
+    <a class='btn btn-primary' href="{{ path ('create_product')}}"> Ajouter un produit</a>
+    <a class='btn btn-primary' href="{{ path ('show_product')}}"> Voir tous les produits</a>
+    </div>
+</br>
+    <div>
+    <a class='btn btn-secondary' href="{{ path ('create_article')}}"> Ajouter un article du Blog</a>
+    <a class='btn btn-secondary' href="{{ path ('show_article')}}"> Voir les articles du blog</a>
+    </div>
 </section>
+</br>
 <section>
     <p> Accéder aux statistiques et commentaires  </p>
     <a href=""> Voir les dernières commandes </a>

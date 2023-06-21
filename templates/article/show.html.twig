@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+
+{% block content %}
+<table class="table">
+    <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Titre article</th>
+                <th scope="col">Petite description</th>
+                <th scope="col">Description</th>
+                <th scope="col">Auteur</th>
+                <th scope="col">Image</th>
+                <th scope="col">Actions</th>
+            </tr>
+    </thead>
+
+  <tbody>
+   
+   {% for article in articles %}
+    <tr>
+      <th scope="row">{{article.id }}</th>
+      <td>{{ article.title }}</td>
+      <td>{{ article.shortdescription }}</td>
+      <td>{{ article.description }}</td>
+      <td>{{ article.Iduser.firstname }}</td>
+      <td><img src="{{ asset('uploads/')}}{{ article.image }}" width="70"></td> 
+       
+       <td>
+        <a href="{{ path('update_article', {id: article.id})}}" class="btn btn-warning m-2">Modifier</a>
+        <a href="{{ path('delete_article', {id: article.id})}}" class="btn btn-danger m-2">Supprimer</a>
+      </td>
+    </tr>
+   {% endfor %}
+  </tbody>
+</table>
+<a href="{{ path('create_article')}}" class="btn btn-success">créer un article</a>
+
+{%  endblock %}

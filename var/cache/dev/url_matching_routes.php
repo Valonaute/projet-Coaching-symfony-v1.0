@@ -37,6 +37,8 @@ return [
         '/admin/category/create' => [[['_route' => 'create_category', '_controller' => 'App\\Controller\\CategoryController::createCategory'], null, null, null, false, false, null]],
         '/product/show' => [[['_route' => 'show_product', '_controller' => 'App\\Controller\\ProductController::showProducts'], null, null, null, false, false, null]],
         '/admin/product/create' => [[['_route' => 'create_product', '_controller' => 'App\\Controller\\ProductController::createproduct'], null, null, null, false, false, null]],
+        '/admin/article/create' => [[['_route' => 'create_article', '_controller' => 'App\\Controller\\ArticleController::createArticle'], null, null, null, false, false, null]],
+        '/articles/show' => [[['_route' => 'show_article', '_controller' => 'App\\Controller\\ArticleController::showArticles'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
@@ -64,7 +66,13 @@ return [
                         .'|update/([^/]++)(*:264)'
                         .'|delete/([^/]++)(*:287)'
                     .')'
+                    .'|article/(?'
+                        .'|update/([^/]++)(*:322)'
+                        .'|delete/([^/]++)(*:345)'
+                    .')'
                 .')'
+                .'|/product/([^/]++)(*:372)'
+                .'|/cart/add/([^/]++)(*:398)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -78,8 +86,12 @@ return [
         206 => [[['_route' => 'update_category', '_controller' => 'App\\Controller\\CategoryController::updateCategory'], ['id'], null, null, false, true, null]],
         229 => [[['_route' => 'delete_category', '_controller' => 'App\\Controller\\CategoryController::deleteCategory'], ['id'], null, null, false, true, null]],
         264 => [[['_route' => 'update_product', '_controller' => 'App\\Controller\\ProductController::updateProduct'], ['id'], null, null, false, true, null]],
-        287 => [
-            [['_route' => 'delete_product', '_controller' => 'App\\Controller\\ProductController::deleteProduct'], ['id'], null, null, false, true, null],
+        287 => [[['_route' => 'delete_product', '_controller' => 'App\\Controller\\ProductController::deleteProduct'], ['id'], null, null, false, true, null]],
+        322 => [[['_route' => 'update_article', '_controller' => 'App\\Controller\\ArticleController::updateArticle'], ['id'], null, null, false, true, null]],
+        345 => [[['_route' => 'delete_article', '_controller' => 'App\\Controller\\ArticleController::deleteArticle'], ['id'], null, null, false, true, null]],
+        372 => [[['_route' => 'product_front', '_controller' => 'App\\Controller\\ProductController::showProductFront'], ['id'], null, null, false, true, null]],
+        398 => [
+            [['_route' => 'cart_add', '_controller' => 'App\\Controller\\CartController::add'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],
